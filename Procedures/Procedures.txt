@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `gettotalpop`()
+begin
+select st_code,state,total,Males,Females from state_religion where type="total";
+end$$
+DELIMITER ;

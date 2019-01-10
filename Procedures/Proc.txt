@@ -1,0 +1,7 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getdisttown`()
+BEGIN
+create or REPLACE view temp as SELECT st_code,dist_h_na,count(*) as towns from main GROUP by dist_h_na;
+SELECT temp.st_code,state,COUNT(*)as dist_no,sum(towns) as town_no from temp,state where state.s_no=temp.st_code GROUP by temp.st_code;
+end$$
+DELIMITER ;

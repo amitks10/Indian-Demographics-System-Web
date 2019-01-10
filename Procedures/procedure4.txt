@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getsexratio`()
+BEGIN
+SELECT st_code,state,cast(avg(sex_ratio)as decimal(6,2)) as sex_ratio,cast(avg(child_sex_ratio)as decimal(6,2)) as child_sex_ratio from literacy GROUP by st_code;
+end$$
+DELIMITER ;

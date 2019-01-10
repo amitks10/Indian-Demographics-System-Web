@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="new1.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">D.T.H.K.</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="separator" class="divider"></li>
+            <li><a href="total_pop.php">Statewise Population</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="getarea.php">Statewise Area</a></li>
+              <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Districts <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="separator" class="divider"></li>
+            <li><a href="dist_town_no.php">Total Districts and towns</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="sexratiocity.php">Gender ratio by district</a></li>
+              <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Towns <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="separator" class="divider"></li>
+            <li><a href="economy_by_town.php">Economy by town</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="find_your_town.php">Find Your Town</a></li>
+              <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+           <li><a href="population.php">Population</a></li>
+          <li><a href="sexratio.php">Gender ratio</a></li>
+           <li ><a href="climate.php">Climate <span class="sr-only">(current)</span></a></li>
+		<li><a href="religion.php">Religion</a></li>
+          <li><a href="higher_education.php">Higher Education</a></li>
+        
+           <li><a href="literacy.php">Literacy</a></li>
+           <li><a href="health.php">Healthcare</a></li>
+         
+          
+      </ul>
+        <li style="float:right;text-align: center;list-style:none"><a href="login.html" style="color: white; text-align: center;">Admin Login</a></li>
+        
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+ <div class="container">
+    <div class="jumbotron" id="jum">
+        <h1><span> <img src="flag_sys.png" height=75px width=100px> </span><font color="white"> INDIAN DEMOGRAPHICS </font></h1>
+    </div>   
+ </div>
+ <div class="sar">
+    <span class="cen">India is the second most populated country in the world with nearly a fifth of the world's population. According to the 2017 revision of the World Population Prospects, the population stood at 1,324,171,354.
+During 1975 - 2010 the population doubled to 1.2 billion. The Indian population reached the billion mark in 1998. India is projected to be the world's most populous country by 2022, surpassing the population of China. It is expected to become the first political entity in history to be home to more than 1.5 billion people by 2030, and its population is set to reach 1.7 billion by 2050. Its population growth rate is 1.2%, ranking 94th in the world in 2013.
+    </span>   
+ </div>
+ 
+
+  <div class="thumbnail">
+  <div class="container">  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="india2.jpg" alt="img" style="width:100%;height:600px; ">
+        </div>
+
+        <div class="item">
+          <img src="maxresdefault1.jpg" alt="india" style="width:100%;height:600px;">
+        </div>
+      
+        <div class="item">
+          <img src="redfort.jpg" alt="india" style="width:100%px;height:600px;">
+        </div>
+          
+           <div class="item">
+          <img src="holi2.jpg" alt="india" style="width:100%px;height:600px;">
+        </div>
+          
+           <div class="item">
+          <img src="desert.jpg" alt="india" style="width:100%px;height:600px;">
+        </div>
+          
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+		 
+ <div class="row">
+         <div class="col-lg-4 col-md-6">
+          <div class="short-div">
+         <div class="thumbnail">
+		     <table>
+                  <tr>
+                     <th colspan=2 id="tt">Most Populated Metros </th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Mumbai</a></td>
+                     <td>18,394,912</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#">Delhi</a></td>
+                      <td>16,349,831</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Kolkata</a></td>
+                     <td>14,035,959</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Chennai</a></td>
+                     <td>8,653,521</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Bangalore</a></td>
+                     <td>8,520,435</td>
+                  </tr>
+             </table>
+         </div></div>
+          <div class="short-div"><div class="thumbnail">
+		    <table>
+                  <tr>
+                     <th colspan=2 id="pp">Top Literal  States</th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Kerela</a></td>
+                     <td>94.00%</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#">Lakshadweep</a></td>
+                      <td>91.85%</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Mizoram</a></td>
+                     <td>91.85%</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Goa</a></td>
+                     <td>88.70%</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Tripura</a></td>
+                     <td>87.22%</td>
+                  </tr>
+             </table>
+         </div></div>
+    </div>
+		 
+         <div class="col-lg-4 col-md-6">
+         <div class="short-div">
+         <div class="thumbnail">
+              <table>
+                  <tr>
+                     <th colspan=2 id="pp">Best Sex Ratio</th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Kerela</a></td>
+                     <td>1084</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#">Puducherry</a></td>
+                      <td>1037</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Tamil Nadu</a></td>
+                     <td>996</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Andhra Pradesh</a></td>
+                     <td>993</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Chattisgarh</a></td>
+                     <td>991</td>
+                  </tr>
+             </table>
+         </div></div>
+         <div class="short-div">
+          <div class="thumbnail">
+             <table>
+                  <tr>
+                     <th colspan=2 id="tt">Top Growth Rate</a></th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Dadra and Nagar Haveli</a></td>
+                     <td>55.88</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#">Daman and Diu</a></td>
+                      <td>53.76</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Puducherry</a></td>
+                     <td>28.08</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Meghalaya</a></td>
+                     <td>27.95</td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Arunachal Pradesh</a></td>
+                     <td>26.03</td>
+                  </tr>
+             </table>
+         </div></div></div>
+    <div class="col-lg-4 col-md-6">
+          <div class="thumbnail">
+          <table style="border:0px width:50px">
+                  <tr >
+                     <th colspan=2 style="background-color: #ff5f0f;font-size: 125%;color: white; text-align:center;">Top Links</th>
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="dist_town_no.php">Total Districts and towns</a></li></td>
+                      
+                  </tr>
+                  <tr class="jss">
+                     <td class="jss"><li><a href="getarea.php">Statewise Area</a></li></td>
+                     
+                  </tr>
+                  <tr class="jss">
+                     <td class="jss"><li><a href="find_your_town.php">Find Your Town</a></li></td>
+                     
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="population.php">Population</a></li></td>
+                     
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="sexratio.php">Gender ratio</a></li></td>
+                    
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="climate.php">Climate </a></li></td>
+                    
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="religion.php">Religion</a></li></td>
+                  
+                  </tr>
+                  <tr class="jss">
+                      <td class="jss"><li><a href="higher_education.php">Higher Education</a></li></td>
+                    
+                  </tr>
+                  <tr class="jss">
+                     <td class="jss"><li><a href="literacy.php">Literacy</a></li></td>
+                    
+                  </tr>
+                  <tr class="jss">
+                     <td class="jss"><li><a href="health.php">Healthcare</a></li></td>
+              
+                  </tr>
+                  
+             </table>
+     </div>
+    </div>
+    </div>
+
+	<div class="row">
+         <div class="col-lg-12 col-md-6" >
+		       <p >Our database includes information about population, growth rate in population, rate of literacy, density of population, sex ratio and child sex ratio (0-6 years). According to the census reports of Indian Census 2011, the population of India is 1,210,854,977 with 623, 724, 248 males and 586,469, 174 females. The total literacy rate in the country at present is 74.04%. The density of population is 382 persons/sq.km. In regards to sex ratio, at present there are 940 females on average on per 1000 males and the child sex ratio is 914 females per 1000 males. 
+
+                India has more than 50% of its population below the age of 25 and more than 65% below the age of 35. It is expected that, in 2020, the average age of an Indian will be 29 years, compared to 37 for China and 48 for Japan; and, by 2030, India's dependency ratio should be just over 0.4.
+			  </p>
+	 </div></div>
+<nav class="navbars navbar-default" id="s" >
+     <div class="container-fluid">
+     <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+     </div>
+     <div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+             <li><a href="#">Created By : Ayush Jain | Abhishek Jain | Mohd Zaid | Amit Kishore Srivastava</a></li>
+
+         </ul>
+     </div>
+     </div>   
+ </nav>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('.carousel').carousel({
+  interval: 2000
+  })
+</script>	
+</body>
+</html>

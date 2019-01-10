@@ -1,0 +1,7 @@
+delimiter @
+CREATE or REPLACE trigger double_insert after insert on main
+for EACH ROW
+BEGIN
+insert into town_dis_state (st_code,dist_code,dist_h_na,town_code,town_name) values(new.st_code,new.dist_code,new.dist_h_na,new.town_code,new.town_name);
+UPDATE town_dis_state set state=(SELECT state from state where state.s_no=town_dis_state.st_code);
+end @

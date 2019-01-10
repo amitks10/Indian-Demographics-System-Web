@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getsexratiocity`(IN `st` VARCHAR(20))
+BEGIN
+SELECT state,city,sex_ratio,child_sex_ratio from literacy where state=st order by city;
+end$$
+DELIMITER ;

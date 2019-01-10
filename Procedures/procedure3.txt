@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getarea`()
+BEGIN
+SELECT s_no,state,tot_area,urb_area,rur_area from state;
+end$$
+DELIMITER ;
